@@ -8,7 +8,7 @@ function triggerAutoCreate() {
   // resets the loop counter if it's not 0
   refreshUserProps();
 
-  var ss1 = SpreadsheetApp.openById("1vQ8FVM_ijZQ4hV9uLZsPCxMcDNHZYXgFQRFDUHHoyuo").getSheetByName("Sheet1");
+  var ss1 = SpreadsheetApp.openById("1vQ8FVM_ijZQxxxxxxxxxxxxxxxxxxxxxx").getSheetByName("Sheet1");
   var range1 = ss1.getRange("A:B");
   var delay1 = range1.getCell(3, 2).getValue();
   var f_count = range1.getCell(9, 2).getValue();
@@ -31,9 +31,9 @@ function refreshUserProps() {
 
 function triggerWithoutDelay(f_count,r_count){
 
-  var url1 = "https://hook.eu1.make.celonis.com/v9ssq5tlh5sgheu9aw0mm63j2dfwva34";
+  var url1 = "https://xxxxxxx";
 
-  var ss4 = SpreadsheetApp.openById("1vQ8FVM_ijZQ4hV9uLZsPCxMcDNHZYXgFQRFDUHHoyuo").getSheetByName("Sheet2");
+  var ss4 = SpreadsheetApp.openById("1vQ8FVM_ijZQxxxxxxxxxxxxxxxxxxxxxx").getSheetByName("Sheet2");
   var range4 = ss4.getDataRange();
   var shoots = range4.getValues();
   var len1 = shoots.length;
@@ -75,7 +75,7 @@ function deleteTrigger() {
 
 function triggerSendHttpRequest() {
   
-  var ss = SpreadsheetApp.openById("1vQ8FVM_ijZQ4hV9uLZsPCxMcDNHZYXgFQRFDUHHoyuo").getSheetByName("Sheet1");
+  var ss = SpreadsheetApp.openById("1vQ8FVM_ijZQxxxxxxxxxxxxxxxxxxxxxx").getSheetByName("Sheet1");
   var range = ss.getRange("A:B");
   var number_of_shoots = range.getCell(5, 2).getValue();
   var f_count = range.getCell(9, 2).getValue();
@@ -91,10 +91,10 @@ function triggerSendHttpRequest() {
   // if loop counter < limit number, run the repeatable action
   if (loopCounter+1 <= limit) {
         
-    var ss2 = SpreadsheetApp.openById("1vQ8FVM_ijZQ4hV9uLZsPCxMcDNHZYXgFQRFDUHHoyuo").getSheetByName("Sheet2");
+    var ss2 = SpreadsheetApp.openById("1vQ8FVM_ijZQxxxxxxxxxxxxxxxxxxxxxx").getSheetByName("Sheet2");
     var range2 = ss2.getRange("A:B");
     var shoot_type = range2.getCell(loopCounter+1, 1).getValue();
-    var url2 = "https://hook.eu1.make.celonis.com/v9ssq5tlh5sgheu9aw0mm63j2dfwva34";
+    var url2 = "https://xxxxxxxxxxxxxx";
 
     var formData2 = {
     'shoot_type': shoot_type,
