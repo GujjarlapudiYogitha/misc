@@ -1,3 +1,8 @@
+// This is a sample App Script which 
+// -> reads the data from Google sheet to fetch trigger delay dynamically
+// -> creates the trigger with given delay
+// -> sends the data via http request
+
 function triggerAutoCreate() {
   
   // resets the loop counter if it's not 0
